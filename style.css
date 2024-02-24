@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: #000;
+}
+
+
+.main-box-container {
+    max-width: 1366px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.main-box-container h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    /* color: #075e54; */
+    background-image: -webkit-linear-gradient(90deg, #075e54, #128c7e, #25d366, #dcf8c6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* -webkit-animation: color-change 10s infinite linear; */
+    margin-bottom: 20px;
+    padding: 0 5%;
+    text-align: center;
+    line-height: normal;
+}
+
+/* @-webkit-keyframes color-change {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+} */
+
+
+.form {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 48%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.4rem;
+}
+
+input:focus {
+    border: 2px solid #93ff40;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background: #cdffa6;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+button:hover {
+    background: #128c7e;
+    color: white;
+}
+
+#whatsLink {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4CAF50;
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.github {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    margin: 1rem;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.github i {
+    color: #000;
+}
+
+.github:hover {
+    background-color: #000;
+}
+
+.github:hover i {
+    color: #e8e8e8;
+}
+
+.icon i {
+    font-size: 2.5rem;
+}
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+   
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 52%;
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+
+    .main-box-container h2 {
+        font-size: 4rem;}
+
+    .github {
+        margin: 2rem;
+    }
+}
+
